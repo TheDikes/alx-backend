@@ -4,9 +4,6 @@
 and returns a tuple of size two """
 
 def index_range(page, page_size):
-    if not isinstance(page, int) or not isinstance(page_size, int):
-        return None
-    
     if page < 1 or page_size < 1:
         return None
     
@@ -14,4 +11,3 @@ def index_range(page, page_size):
     end_index = (page * page_size)
 
     return (start_index, end_index)
-    
